@@ -99,7 +99,7 @@ const CreateBug = () => {
             </div>
             <div className="p-3"></div>
             <div className="p-3">
-              <label htmlFor="attachments" className="text-md font-bold">
+              <label htmlFor="attachments" className="text-md font-bold ">
                 إضافة مرفقات
               </label>
             </div>
@@ -111,11 +111,11 @@ const CreateBug = () => {
                 accept="image/*"
                 multiple
                 onChange={handleImageChange}
-                className="hidden"
+                className="hidden "
               />
               <label
                 htmlFor="attachments"
-                className="cursor-pointer flex items-center justify-center w-9 h-9 bg-primaryGreen text-white rounded-full hover:bg-black"
+                className="cursor-pointer flex items-center justify-center w-9 h-9  bg-secondGreen text-white rounded-full hover:bg-black"
               >
                 {/* أيقونة رفع */}
                 <Images />
@@ -142,7 +142,7 @@ const CreateBug = () => {
               )}
             </div>
             <div className="flex  justify-center rounded-lg m-5">
-              <Button className="w-1/2  bg-primaryGreen">إضافة</Button>
+              <Button className="w-1/2  bg-secondGreen">إضافة</Button>
             </div>
           </form>
         </div>

@@ -1,5 +1,5 @@
 import  { useState } from "react";
-import TesterTaskCard from "./TesterTaskCard"
+import TesterTaskCard from "./cards/TesterTaskCard";
 import { taskData } from "@/mock/data";
 
 const KanbanBoard = () => {

@@ -36,9 +36,9 @@ const ReportDetails = () => {
     <div>
       <div className=" h-full m-9 p-9 bg-white rounded-lg">
         <p className="text-2xl font-bold">تفاصيل البلاغ رقم {taskId}</p>
-        <div className="flex flex-row gap-3 p-5  h-60">
+        <div className="flex flex-row gap-3 p-5  h-60 justify-between">
           card details .
-          <Button className=" bg-primaryGreen rounded-lg">
+          <Button className=" bg-secondGreen rounded-lg">
             تحميل المرفقات
             <Download />
           </Button>
@@ -60,9 +60,10 @@ const ReportDetails = () => {
             />
             <div className="w-full p-2 border border-gray-300 rounded-md ">
               <h3 className="text-lg font-semibold">اجراءات المختبر </h3>
-              <div className="flex flex-row  my-2 gap-8">
+              <div className="flex flex-row  gap-20 p-3 ">
                 {/* procedure type */}
-                <div>
+                < div>
+                  
                   <p>تصنيف الخطأ</p>
                   <Select value="Gis" onValueChange={handleStatusChange}>
                     <SelectTrigger className="w-[180px]">
@@ -76,9 +77,12 @@ const ReportDetails = () => {
                       ))}
                     </SelectContent>
                   </Select>
+                  
                 </div>
+
+
                 {/* statue */}
-                <div className="">
+                <div className=" border-secondGreen">
                   <p>الحالة</p>
                   <Select
                     value="قيد التنفيذ"
@@ -98,7 +102,7 @@ const ReportDetails = () => {
                 <div className=" pt-5   ">
                   <button
                     type="submit"
-                    className="bg-primaryGreen text-white py-2 px-4 rounded-lg "
+                    className=" bg-secondGreen text-white py-2 px-4 rounded-lg "
                   >
                     تحديث
                   </button>
