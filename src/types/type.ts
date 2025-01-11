@@ -1,3 +1,5 @@
+
+//Tester
 export type Task = {
   id: string;
   reportId: number;
@@ -74,3 +76,8 @@ export type issuesTypes = {
   id: string;
   name: IssueCategory;
 };
+
+
+//tester administration
+
+
