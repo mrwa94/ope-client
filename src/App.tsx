@@ -10,7 +10,9 @@ const App = () => {
 
   return (
     <Router>
+     
      <TesterDashboard/>
+    
     </Router>
   );
 };

@@ -10,20 +10,30 @@ import { useNavigate } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
 import logo from "../../assets/images/logo.png";
+import CompanyLogo from "../../assets/images/amanaLogo.svg"
 
-import TestingRequests from "./TestingRequests";
+
 
 import CreateBug from "./CreateBug";
 import ServicesOverview from "./ServicesOverview";
 import { Button } from "@/components/ui/button";
-import KanbanBoard from "@/components/tester/KanbanBoard";
+import KanbanBoard from "@/components/KanbanBoard";
 import ReportDetails from "./ReportDetails";
+// import { useSelector } from "react-redux";
+// import { RootState } from "@/redux/store";
+
+import TestingRequests from "./TestingRequests";
 
 const TesterDashboard = () => {
   const navigate = useNavigate();
+  // const tasks = useSelector((state: RootState) => state.tasks.tasks);
+  // const requests = useSelector((state: RootState) => state.requests.requests);
+
+
 
   return (
     <div className="flex h-screen">
+      
       {/* Sidebar */}
       <Sidebar className="bg-[#004D46] text-black fixed top-0 left-0 h-full">
         <div className="m-5">
@@ -76,12 +86,21 @@ const TesterDashboard = () => {
       </Sidebar>
 
       {/* Main Content */}
-      <main className="flex-1  p-6 bg-gray-200 overflow-y-auto h-screen">
+      <main className="flex-1    overflow-y-auto h-screen">
+          <div className=" bg-primaryGreen   flex justify-center">
+           <img src = {CompanyLogo} alt = "شعار الامانة" width={150}/>
+          </div>
         <Routes>
-          <Route path="/tester/track-reports" element={<KanbanBoard />} />
+          <Route path="/tester/track-reports" element={
+             <KanbanBoard
+            // تمرير مكون المهام
+           />
+          } />
+          
           <Route
             path="/tester/testing-requests"
-            element={<TestingRequests />}
+            element={<TestingRequests />// تمرير مكون المهام
+            }
           />
           <Route path="/tester/create-bug" element={<CreateBug />} />
           <Route

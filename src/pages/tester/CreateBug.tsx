@@ -36,8 +36,8 @@ const CreateBug = () => {
   };
   return (
     <div className="flex flex-col   ">
-      <div className=" min-h-screen m-9 p-9 bg-white rounded-lg">
-        <p className="text-2xl font-bold flex flex-row gap-2 pb-9 ">
+      <div className=" min-h-screen m-9  bg-white rounded-lg">
+        <p className="text-2xl font-bold flex flex-row gap-2 pb-3 ">
           <SquarePen className="mt-2 " />
           إضافة خطأ جديد(Bug) :
         </p>

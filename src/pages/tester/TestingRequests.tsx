@@ -24,7 +24,7 @@ const TestingRequests = () => {
   return (
     <div className="flex gap-6 min-h-full ">
       {/* "To Do" */}
-      <div className="flex-1 bg-gray-300 p-4 rounded-lg shadow-lg ">
+      <div className="flex-1  p-4 rounded-lg shadow-lg ">
         <h3 className="text-xl font-semibold text-center mb-6  top-0 bg-gray-00 bg-white ">جديد</h3>
         <div className="space-y-4  overflow-y-auto">
           {taskColumns["to-do"].map((request) => (
@@ -34,7 +34,7 @@ const TestingRequests = () => {
       </div>
 
       {/* "In Progress" */}
-      <div className="flex-1 bg-yellow-50 p-4 rounded-lg shadow-lg">
+      <div className="flex-1  p-4 rounded-lg shadow-lg">
         <h3 className="text-xl font-semibold text-center  mb-6  top-0  bg-white ">قيد التنفيذ</h3>
         <div className="space-y-4  overflow-y-auto">
           {taskColumns["in-progress"].map((request) => (
@@ -44,7 +44,7 @@ const TestingRequests = () => {
       </div>
 
       {/* "Done" */}
-      <div className="flex-1 bg-green-100 p-4 rounded-lg shadow-lg">
+      <div className="flex-1  p-4 rounded-lg shadow-lg">
         <h3 className="text-xl font-semibold text-center  mb-6  top-0  bg-white ">تم التنفيذ</h3>
         <div className="space-y-4  overflow-y-auto">
           {taskColumns["done"].map((request) => (
